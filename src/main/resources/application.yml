@@ -1,0 +1,16 @@
+server:
+  port: 9093
+eureka:
+  client:
+   healthcheck:
+    enable: true
+   fetch-registry: false
+   register-with-eureka: false
+   service-url:
+    defaultZone: http://localhost:${server.port}/eureka
+#
+#spring:
+#  security:
+#    user:
+#      name: user
+#      password: password123
